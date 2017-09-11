@@ -1,0 +1,40 @@
+/* line 2, ../sass/my-projects.scss */
+.page-my-projects .page-header {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: cursive;
+}
+/* line 7, ../sass/my-projects.scss */
+.page-my-projects .views-row {
+  padding-bottom: 30px;
+}
+/* line 10, ../sass/my-projects.scss */
+.page-my-projects .views-accordion-header {
+  background: #4CB0BB;
+  font-size: 2rem;
+  font-family: cursive;
+}
+/* line 14, ../sass/my-projects.scss */
+.page-my-projects .views-accordion-header .field-content {
+  color: white;
+}
+/* line 18, ../sass/my-projects.scss */
+.page-my-projects .ui-accordion-content {
+  font-family: cursive;
+}
+/* line 20, ../sass/my-projects.scss */
+.page-my-projects .ui-accordion-content .field-content {
+  display: inline;
+}
+/* line 24, ../sass/my-projects.scss */
+.page-my-projects .ui-accordion-content .views-field-field-project-link a {
+  color: orange;
+}
+/* line 29, ../sass/my-projects.scss */
+.page-my-projects .ui-accordion-content .views-field-view-node a {
+  color: blue;
+}
+/* line 34, ../sass/my-projects.scss */
+.page-my-projects .views-field {
+  padding-bottom: 5px;
+}

@@ -1,0 +1,3 @@
+name = 'Node Update on Saving'
+description = 'Implementation node update on saving'
+core = '7.x'

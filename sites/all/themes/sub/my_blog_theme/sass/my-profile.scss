@@ -1,0 +1,131 @@
+.page-my-profile {
+  .page-header {
+    display :none;
+  }
+  .views-field-title {
+    padding-bottom: 30px;
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+    span {
+      font-size: 2.5rem;
+      color: darkslateblue;
+    }
+  }
+  .views-field-field-photo {
+    display: inline-block;
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+    .field-content {
+      @media screen and (max-width: 767px) {
+        width: 50%;
+        margin: auto;
+      }
+      @media screen and (max-width: 500px) {
+        width: 100%;
+      }
+    }
+  }
+  .views-field-field-whoami {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding: 30px;
+    text-align: justify;
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 500px) {
+      padding: 0px;
+      padding-top: 20px;
+
+    }
+    .field-content p {
+      font-family: cursive;
+      font-size: 1.5rem;
+      line-height: 1.5;
+      word-spacing: 5px;
+    }
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: cursive;
+    font-size: 1.5rem;
+  }
+  th, td {
+      text-align: left;
+      padding: 15px;
+  }
+
+  tr:nth-child(even){background-color: #f2f2f2}
+  th {
+      background-color: #4CB0BB;
+      color: white;
+  }
+  .views-field-field-technical-skills {
+    .main-technical-block {
+      padding-top: 20px;
+      .technical-skills {
+        padding-bottom: 15px;
+        p {
+          font-weight: bold;
+        }
+      }
+      .content {
+        border: 2px solid gray;
+        padding: 20px;
+        box-shadow: 10px 10px 10px #888888;
+      }
+      .sub, p, .sub-name {
+        display: inline-block;
+        font-family: cursive;
+        font-size: 1.5rem;
+      }
+      .sub {
+        width: 15%;
+      }
+      .sub-name {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .views-label-field-my-projects, .views-label-field-certificates {
+    font-weight: bold;
+  }
+
+  .views-field-field-certificates, .views-field-field-my-projects {
+    padding-top: 30px;
+    .field-content {
+      padding-top: 10px;
+    }
+   .project-link a {
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #4CB0BB;
+      color: white;
+      padding: 10px 25px;
+      opacity: 0.8;
+      border-radius: 0px;
+      border-color: white;
+      text-align: center;
+      display: block;
+      width: 20%;
+      margin: auto;
+      clear: both;
+      text-align: center;
+      padding: 12px 0px;
+      @media screen and (max-width: 767px) {
+        width: 35%;
+      }
+      @media screen and (max-width: 500px) {
+        width: 50%;
+      }
+      @media screen and (max-width: 500px) {
+        width: 100%;
+      }
+    }
+  }
+}

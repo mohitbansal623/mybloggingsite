@@ -1,0 +1,8 @@
+/* line 1, ../sass/basic_layout.scss */
+.footer {
+  background: linen;
+}
+/* line 4, ../sass/basic_layout.scss */
+.footer .block-webform .block-title {
+  font-family: serif;
+}

@@ -1,0 +1,21 @@
+<?php
+/**
+  * @file
+  * This file is for updating some options of node while creation
+  */
+
+  /**
+   * Implements hook_node_presave()
+   */
+  function mynode_update_node_presave($node) {
+    // dpm($node);
+  }
+
+  /**
+   * Implements hook_node_insert()
+   */
+  function mynode_update_node_insert($node) {
+    if ($node->type == 'create_blog') {
+      $node->promote = 0;
+    }
+  }
