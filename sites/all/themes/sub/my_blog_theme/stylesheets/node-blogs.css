@@ -1,5 +1,19 @@
-/* line 3, ../sass/node-blogs.scss */
-.node-type-create-blog .icons .fa {
+/* line 2, ../sass/node-blogs.scss */
+.node-type-create-blog .field, .page-myprofile .field {
+  padding-top: 15px;
+}
+/* line 5, ../sass/node-blogs.scss */
+.node-type-create-blog .field-collection-view, .page-myprofile .field-collection-view {
+  margin: 0;
+  padding: 0;
+}
+/* line 9, ../sass/node-blogs.scss */
+.node-type-create-blog .icons, .page-myprofile .icons {
+  padding-top: 20px;
+  font-family: demifont;
+}
+/* line 12, ../sass/node-blogs.scss */
+.node-type-create-blog .icons .fa, .page-myprofile .icons .fa {
   padding: 16px;
   font-size: 1.5rem;
   width: 50px;
@@ -9,26 +23,44 @@
   margin: 5px;
   border-radius: 50%;
 }
-/* line 13, ../sass/node-blogs.scss */
-.node-type-create-blog .icons .fa:hover {
+/* line 22, ../sass/node-blogs.scss */
+.node-type-create-blog .icons .fa:hover, .page-myprofile .icons .fa:hover {
   opacity: 0.7;
   font-size: 1.5rem;
   text-decoration: none;
 }
-/* line 18, ../sass/node-blogs.scss */
-.node-type-create-blog .icons .fa-facebook {
+/* line 27, ../sass/node-blogs.scss */
+.node-type-create-blog .icons .fa-facebook, .page-myprofile .icons .fa-facebook {
   background: #1F487C;
   margin-left: 0;
 }
-/* line 22, ../sass/node-blogs.scss */
-.node-type-create-blog .icons .fa-facebook:before {
+/* line 31, ../sass/node-blogs.scss */
+.node-type-create-blog .icons .fa-facebook:before, .page-myprofile .icons .fa-facebook:before {
   color: white;
 }
-/* line 25, ../sass/node-blogs.scss */
-.node-type-create-blog .icons .fa-twitter {
+/* line 34, ../sass/node-blogs.scss */
+.node-type-create-blog .icons .fa-twitter, .page-myprofile .icons .fa-twitter {
   background: #55ACEE;
 }
-/* line 28, ../sass/node-blogs.scss */
-.node-type-create-blog .icons .fa-twitter:before {
+/* line 37, ../sass/node-blogs.scss */
+.node-type-create-blog .icons .fa-twitter:before, .page-myprofile .icons .fa-twitter:before {
   color: white;
+}
+/* line 40, ../sass/node-blogs.scss */
+.node-type-create-blog .icons .fa-linkedin, .page-myprofile .icons .fa-linkedin {
+  background: #007AB1;
+}
+/* line 43, ../sass/node-blogs.scss */
+.node-type-create-blog .icons .fa-linkedin:before, .page-myprofile .icons .fa-linkedin:before {
+  color: white;
+}
+/* line 47, ../sass/node-blogs.scss */
+.node-type-create-blog .icons .views-field-nothing .icons, .page-myprofile .icons .views-field-nothing .icons {
+  padding-top: 20px;
+  font-family: demifont;
+}
+
+/* line 56, ../sass/node-blogs.scss */
+.page-myprofile .social-media-icons {
+  text-align: center;
 }

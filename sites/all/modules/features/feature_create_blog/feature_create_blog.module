@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_create_blog feature.
+ */
+
+include_once 'feature_create_blog.features.inc';

@@ -7,15 +7,106 @@
   /**
    * Implements hook_node_presave()
    */
-  function mynode_update_node_presave($node) {
-    // dpm($node);
+  function mynode_update_node_update($node) {
+    if ($node->promote == 1 && $node->original->status == 0 && $node->status == 1) {
+      global $base_url;
+      global $base_path;
+      $user_id = $node->uid;
+      $user_details = getMailID($user_id);
+      $nid = $node->nid;
+      $blog_path = drupal_get_path_alias('node/' . $node->nid);
+      $blog_link = $base_url . $base_path . $blog_path;
+      $message = 'Dear ' . $user_details['name'] . ','  . "\n\n" . 'Your blog has been published. Here is your link:-' . $blog_link . "\n" . 'Keep sharing your blogs.' . "\n\n" . '-- Er. Mohit Bansal Team';
+      // Send the email.
+      $params = array(
+        'subject' => t('Published Blog'),
+        'body' => t($message),
+      );
+
+      drupal_mail('mynode_update', 'mail', $user_details['mail'], language_default(), $params);
+    }
   }
 
   /**
    * Implements hook_node_insert()
    */
   function mynode_update_node_insert($node) {
+
     if ($node->type == 'create_blog') {
       $node->promote = 0;
+      $node->status = NODE_NOT_PUBLISHED;
     }
   }
+
+  /**
+   * Retrieve mail id of the user whose blog has to be published
+   */
+  function getMailID($user_id) {
+    $user = array();
+    $result = db_select('users', 'u')
+    ->fields('u', array('mail', 'name'))
+    ->condition('uid', $user_id, '=')
+    ->execute()
+    ->fetchAssoc();
+
+    $user['mail'] = $result['mail'];
+    $user['name'] = $result['name'];
+    return $user;
+  }
+
+/**
+ * Implements hook_mail for module_name.
+ */
+function mynode_update_mail($key, &$message, $params) {
+  switch ($key) {
+    case 'mail':
+      $message['subject'] = $params['subject'];
+      $message['body'][] = $params['body'];
+      break;
+  }
+}
+
+function mynode_update_form_alter(&$form, &$form_state, $form_id) {
+  // $form['#access'] = FALSE;
+  // drupal_set_message(t("you are not authorized to edit this page"), 'error', FALSE);
+  // $nids = array(73);
+  // global $user;
+  // if (in_array('administrator', $user->roles) && isset($form['nid']['#value']) && in_array($form['nid']['#value'], $nids)) {
+  //   drupal_goto('access-denied');
+  // }
+}
+
+function mynode_update_menu_alter(&$items) {
+  // global $user;
+
+  // $path = current_path();
+  // $path = explode("/", $path);
+  // $nids = array(73);
+
+  // if ($path[0] == 'node' && is_numeric($path[1]) && $path[2] == 'edit') {
+  //   if (in_array('administrator', $user->roles) && in_array($path[1], $nids)) {
+  //     $items['node/%node/edit']['access callback'] = FALSE;
+  //   }
+  // }
+  // dpm($items);
+}
+
+/**
+ * Implement hook_menu();
+ */
+function mynode_update_menu() {
+  $items['access-denied'] = array(
+    'page callback' => 'access_denied_page',
+    'access arguments' => TRUE,
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+
+
+function access_denied_page() {
+  return 'You are not authorized to access this page.';
+}

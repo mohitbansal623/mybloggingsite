@@ -1,140 +1,163 @@
 /* line 2, ../sass/my-profile.scss */
-.page-my-profile .page-header {
+.page-myprofile .page-header {
   display: none;
 }
-/* line 5, ../sass/my-profile.scss */
-.page-my-profile .views-field-title {
-  padding-bottom: 30px;
-}
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   /* line 5, ../sass/my-profile.scss */
-  .page-my-profile .views-field-title {
+  .page-myprofile .views-field-title {
     text-align: center;
   }
 }
-/* line 10, ../sass/my-profile.scss */
-.page-my-profile .views-field-title span {
+/* line 9, ../sass/my-profile.scss */
+.page-myprofile .views-field-title span {
   font-size: 2.5rem;
   color: darkslateblue;
 }
-/* line 15, ../sass/my-profile.scss */
-.page-my-profile .views-field-field-photo {
+/* line 14, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-email {
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 1199px) {
+  /* line 14, ../sass/my-profile.scss */
+  .page-myprofile .views-field-field-email {
+    text-align: center;
+  }
+}
+/* line 20, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-photo {
   display: inline-block;
 }
-@media screen and (max-width: 767px) {
-  /* line 15, ../sass/my-profile.scss */
-  .page-my-profile .views-field-field-photo {
+/* line 22, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-photo img {
+  width: 220px;
+  height: 220px;
+  margin: auto;
+  border: 1px solid black;
+}
+@media screen and (max-width: 991px) {
+  /* line 20, ../sass/my-profile.scss */
+  .page-myprofile .views-field-field-photo {
     width: 100%;
   }
 }
-@media screen and (max-width: 767px) {
-  /* line 20, ../sass/my-profile.scss */
-  .page-my-profile .views-field-field-photo .field-content {
-    width: 50%;
+@media screen and (max-width: 1199px) {
+  /* line 32, ../sass/my-profile.scss */
+  .page-myprofile .views-field-field-photo .field-content {
+    width: 100%;
     margin: auto;
   }
 }
-@media screen and (max-width: 500px) {
-  /* line 20, ../sass/my-profile.scss */
-  .page-my-profile .views-field-field-photo .field-content {
-    width: 100%;
+@media screen and (max-width: 991px) {
+  /* line 32, ../sass/my-profile.scss */
+  .page-myprofile .views-field-field-photo .field-content {
+    width: 60%;
+    margin: auto;
   }
 }
-/* line 30, ../sass/my-profile.scss */
-.page-my-profile .views-field-field-whoami {
+/* line 43, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-whoami {
   display: inline-block;
-  width: 50%;
+  width: 75%;
   vertical-align: top;
-  padding: 30px;
+  padding: 15px 30px;
   text-align: justify;
 }
-@media screen and (max-width: 767px) {
-  /* line 30, ../sass/my-profile.scss */
-  .page-my-profile .views-field-field-whoami {
+@media screen and (max-width: 991px) {
+  /* line 43, ../sass/my-profile.scss */
+  .page-myprofile .views-field-field-whoami {
     width: 100%;
-  }
-}
-@media screen and (max-width: 500px) {
-  /* line 30, ../sass/my-profile.scss */
-  .page-my-profile .views-field-field-whoami {
     padding: 0px;
     padding-top: 20px;
   }
 }
-/* line 44, ../sass/my-profile.scss */
-.page-my-profile .views-field-field-whoami .field-content p {
-  font-family: cursive;
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 43, ../sass/my-profile.scss */
+  .page-myprofile .views-field-field-whoami {
+    padding: 0px 15px;
+  }
+}
+/* line 58, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-whoami .field-content p {
   font-size: 1.5rem;
   line-height: 1.5;
-  word-spacing: 5px;
+  word-spacing: 3px;
 }
-/* line 51, ../sass/my-profile.scss */
-.page-my-profile table {
+/* line 63, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-whoami .field-content span.bold-names, .page-myprofile .views-field-field-whoami .field-content .uppercase-words {
+  font-family: demifont;
+  color: #337ab7;
+}
+/* line 67, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-whoami .field-content .uppercase-words {
+  text-transform: uppercase;
+}
+/* line 72, ../sass/my-profile.scss */
+.page-myprofile table {
   border-collapse: collapse;
   width: 100%;
-  font-family: cursive;
+  font-family: normalfont;
   font-size: 1.5rem;
 }
-/* line 57, ../sass/my-profile.scss */
-.page-my-profile th, .page-my-profile td {
+/* line 78, ../sass/my-profile.scss */
+.page-myprofile th, .page-myprofile td {
   text-align: left;
   padding: 15px;
 }
-/* line 62, ../sass/my-profile.scss */
-.page-my-profile tr:nth-child(even) {
+/* line 83, ../sass/my-profile.scss */
+.page-myprofile tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-/* line 63, ../sass/my-profile.scss */
-.page-my-profile th {
+/* line 84, ../sass/my-profile.scss */
+.page-myprofile th {
   background-color: #4CB0BB;
   color: white;
 }
-/* line 68, ../sass/my-profile.scss */
-.page-my-profile .views-field-field-technical-skills .main-technical-block {
+/* line 89, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-technical-skills .main-technical-block {
   padding-top: 20px;
 }
-/* line 70, ../sass/my-profile.scss */
-.page-my-profile .views-field-field-technical-skills .main-technical-block .technical-skills {
+/* line 91, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-technical-skills .main-technical-block .technical-skills {
   padding-bottom: 15px;
 }
-/* line 72, ../sass/my-profile.scss */
-.page-my-profile .views-field-field-technical-skills .main-technical-block .technical-skills p {
-  font-weight: bold;
+/* line 93, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-technical-skills .main-technical-block .technical-skills p {
+  font-family: demifont;
 }
-/* line 76, ../sass/my-profile.scss */
-.page-my-profile .views-field-field-technical-skills .main-technical-block .content {
+/* line 97, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-technical-skills .main-technical-block .content {
   border: 2px solid gray;
   padding: 20px;
   box-shadow: 10px 10px 10px #888888;
 }
-/* line 81, ../sass/my-profile.scss */
-.page-my-profile .views-field-field-technical-skills .main-technical-block .sub, .page-my-profile .views-field-field-technical-skills .main-technical-block p, .page-my-profile .views-field-field-technical-skills .main-technical-block .sub-name {
+/* line 102, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-technical-skills .main-technical-block .sub, .page-myprofile .views-field-field-technical-skills .main-technical-block p, .page-myprofile .views-field-field-technical-skills .main-technical-block .sub-name {
   display: inline-block;
-  font-family: cursive;
   font-size: 1.5rem;
 }
-/* line 86, ../sass/my-profile.scss */
-.page-my-profile .views-field-field-technical-skills .main-technical-block .sub {
+/* line 106, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-technical-skills .main-technical-block .sub {
   width: 15%;
-}
-/* line 89, ../sass/my-profile.scss */
-.page-my-profile .views-field-field-technical-skills .main-technical-block .sub-name {
-  font-size: 1.5rem;
-}
-/* line 95, ../sass/my-profile.scss */
-.page-my-profile .views-label-field-my-projects, .page-my-profile .views-label-field-certificates {
   font-weight: bold;
 }
-/* line 99, ../sass/my-profile.scss */
-.page-my-profile .views-field-field-certificates, .page-my-profile .views-field-field-my-projects {
+/* line 110, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-technical-skills .main-technical-block .sub-name {
+  font-size: 1.5rem;
+}
+/* line 116, ../sass/my-profile.scss */
+.page-myprofile .views-label-field-my-projects, .page-myprofile .views-label-field-certificates, .page-myprofile .academic-title {
+  font-family: demifont;
+}
+/* line 120, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-certificates, .page-myprofile .views-field-field-my-projects {
   padding-top: 30px;
 }
-/* line 101, ../sass/my-profile.scss */
-.page-my-profile .views-field-field-certificates .field-content, .page-my-profile .views-field-field-my-projects .field-content {
+/* line 122, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-certificates .field-content, .page-myprofile .views-field-field-my-projects .field-content {
   padding-top: 10px;
 }
-/* line 104, ../sass/my-profile.scss */
-.page-my-profile .views-field-field-certificates .project-link a, .page-my-profile .views-field-field-my-projects .project-link a {
+/* line 125, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-certificates .project-link a, .page-myprofile .views-field-field-my-projects .project-link a {
   font-size: 18px;
   font-weight: bold;
   background-color: #4CB0BB;
@@ -151,21 +174,84 @@
   text-align: center;
   padding: 12px 0px;
 }
-@media screen and (max-width: 767px) {
-  /* line 104, ../sass/my-profile.scss */
-  .page-my-profile .views-field-field-certificates .project-link a, .page-my-profile .views-field-field-my-projects .project-link a {
-    width: 35%;
+@media screen and (max-width: 991px) {
+  /* line 125, ../sass/my-profile.scss */
+  .page-myprofile .views-field-field-certificates .project-link a, .page-myprofile .views-field-field-my-projects .project-link a {
+    width: 30%;
   }
 }
-@media screen and (max-width: 500px) {
-  /* line 104, ../sass/my-profile.scss */
-  .page-my-profile .views-field-field-certificates .project-link a, .page-my-profile .views-field-field-my-projects .project-link a {
+@media screen and (max-width: 767px) {
+  /* line 125, ../sass/my-profile.scss */
+  .page-myprofile .views-field-field-certificates .project-link a, .page-myprofile .views-field-field-my-projects .project-link a {
     width: 50%;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 104, ../sass/my-profile.scss */
-  .page-my-profile .views-field-field-certificates .project-link a, .page-my-profile .views-field-field-my-projects .project-link a {
+  /* line 125, ../sass/my-profile.scss */
+  .page-myprofile .views-field-field-certificates .project-link a, .page-myprofile .views-field-field-my-projects .project-link a {
     width: 100%;
   }
+}
+/* line 153, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-technical-skills-new {
+  padding-top: 30px;
+}
+/* line 155, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-technical-skills-new span {
+  font-family: demifont;
+  font-size: 1.5rem;
+}
+/* line 159, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-technical-skills-new .field-collection-view {
+  display: inline-block;
+  padding-right: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 1199px) {
+  /* line 159, ../sass/my-profile.scss */
+  .page-myprofile .views-field-field-technical-skills-new .field-collection-view {
+    padding-right: 35px;
+  }
+}
+@media screen and (min-width: 690px) and (max-width: 734px) {
+  /* line 159, ../sass/my-profile.scss */
+  .page-myprofile .views-field-field-technical-skills-new .field-collection-view {
+    padding-right: 80px;
+    padding-left: 50px;
+  }
+}
+@media screen and (min-width: 550px) and (max-width: 689px) {
+  /* line 159, ../sass/my-profile.scss */
+  .page-myprofile .views-field-field-technical-skills-new .field-collection-view {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 549px) {
+  /* line 159, ../sass/my-profile.scss */
+  .page-myprofile .views-field-field-technical-skills-new .field-collection-view {
+    margin-left: 20%;
+  }
+}
+/* line 179, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-technical-skills-new .field-collection-view:last-child {
+  display: block;
+}
+/* line 182, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-technical-skills-new .field-content {
+  padding-top: 10px;
+}
+/* line 184, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-technical-skills-new .field-content .field-name-field-subject {
+  padding-bottom: 15px;
+}
+/* line 187, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-technical-skills-new .field-content .field-name-field-tech-logo img {
+  width: 200px;
+  height: 120px;
+}
+/* line 191, ../sass/my-profile.scss */
+.page-myprofile .views-field-field-technical-skills-new .field-content .content .field-items .field-item {
+  font-family: normalfont;
 }

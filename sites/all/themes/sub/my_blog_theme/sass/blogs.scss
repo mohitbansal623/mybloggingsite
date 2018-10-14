@@ -1,0 +1,54 @@
+.page-blogs {
+  .page-header {
+    display: none;
+  }
+  .view-filters {
+    .form-type-textfield select {
+      height: 30px;
+      padding: 0px 10px;
+    }
+    .form-type-textfield select.shs-select-level-2 {
+        margin-left: 10px;
+    }
+    .views-submit-button button {
+      height: 30px;
+      padding: 0px 20px;
+      width: 100px;
+      text-transform: uppercase;
+      // text-align: center;
+    }
+  }
+
+  //*****************IMPORTANT***********************
+  // This id is Blogs for prod instead of blogs
+  .view-id-blogs .view-content {
+    padding-top: 20px;
+    .views-row {
+      .views-field-title {
+        padding: 10px 0px;
+        .field-content {
+          font-size: 2rem;
+          font-family: demifont;
+        }
+        a {
+          text-transform: uppercase;
+        }
+      }
+      .views-field-view-node {
+        padding: 10px 0px;
+      }
+      .views-field-field-rating span {
+        font-family: demifont;
+      }
+    }
+  }
+
+  //*************IMPORTANT*************
+  // This id is Blogs for prod instead of blogs
+
+  .view-id-blogs .view-empty {
+    p {
+      font-family:demifont;
+    }
+  }
+}

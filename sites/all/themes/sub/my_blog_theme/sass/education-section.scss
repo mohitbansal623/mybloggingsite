@@ -1,10 +1,15 @@
-.page-tech-section, .page-nontech-section {
+.page-techsection, .page-nontechsection, .page-its-show-time {
+  .breadcrumb {
+    display: none;
+  }
+  .views-row:nth-child(3n+1) {
+      clear: both;
+  }
   .views-field.views-field-title span{
         text-align: center;
-        font-weight: bold;
         font-size: 2rem;
         color: orange;
-        font-family: cursive;
+        // font-family: cursive;
   }
   .media-youtube-video {
     position: relative;
@@ -25,9 +30,9 @@
         .img-responsive {
           height: 50px;
         }
-
       }
     }
+
     .views-field-field-most-useful-sites{
       .field-collection-view {
         display: inline-block;
@@ -37,7 +42,7 @@
     }
   }
 
-  .view-display-id-tech_videos, .view-display-id-non_technical {
+  .view-display-id-tech_videos, .view-display-id-non_technical, .view-id-it_s_show_time {
     padding-top: 50px;
     .views-field-field-tech-video {
       padding-bottom: 10px;
@@ -48,7 +53,19 @@
     }
     .views-field.views-field-title span{
       text-align: center;
-      font-weight: bold;
+    }
+  }
+
+  .views-field-field-rating {
+    span {
+      font-family: demifont;
+      color: #337ab7;
     }
   }
 }
+
+.page-its-show-time {
+  .footer.container {
+    display: none;
+  }
+ }

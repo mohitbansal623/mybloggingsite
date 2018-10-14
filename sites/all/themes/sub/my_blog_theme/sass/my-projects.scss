@@ -1,8 +1,8 @@
-.page-my-projects {
+.page-myprojects {
   .page-header {
     text-align: center;
     font-size: 2.5rem;
-    font-family: cursive;
+    font-family: normalfont;
   }
   .views-row {
     padding-bottom: 30px;
@@ -10,13 +10,13 @@
   .views-accordion-header {
     background: #4CB0BB;
     font-size: 2rem;
-    font-family: cursive;
     .field-content {
       color: white;
+      font-family: demifont;
     }
   }
   .ui-accordion-content {
-    font-family: cursive;
+    font-family: normalfont;
     .field-content {
       display: inline;
     }

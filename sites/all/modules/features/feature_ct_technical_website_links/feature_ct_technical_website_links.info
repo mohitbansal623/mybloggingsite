@@ -1,0 +1,5 @@
+name = feature_ct_technical_website_links
+description = This content type will contain links for technical section
+core = 7.x
+package = Features
+features[features_api][] = api:2

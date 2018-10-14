@@ -1,0 +1,25 @@
+<?php
+/**
+ * @file
+ * This file is for changes to be made on installation and to update things
+ * to controll site
+ */
+
+/**
+ * This function is for prform operation on installation
+ */
+function site_controller_install() {
+  // To enable required modules in the project.
+  // Array of module names.
+  $modules = array('bootstrap', 'views', 'entityreference','features','devel','ctools','admin_menu','webform','extlink', 'votingapi', 'field_collection', 'media', 'media_youtube', 'shs', 'views_accordion', 'email', 'fivestar', 'pathauto', 'link', 'devel', 'metatag', 'rules', 'feature_create_blog', 'feature_ct_my_projects', 'feature_ct_education_section','feature_ct_technical_website_links', 'feature_views_about_me', 'feature_views_authenticated_users_data', 'feature_views_blogs', 'feature_views_education_section', 'feature_views_my_profile', 'feature_views_user_dashboard');
+  // Whether or not to enable dependant modules.
+  $enable_dependencies = TRUE;
+  module_enable($modules, $enable_dependencies);
+}
+
+function site_controller_update_7001() {
+  $modules = array('admin_menu');
+  // Whether or not to enable dependant modules.
+  $enable_dependencies = TRUE;
+  module_enable($modules, $enable_dependencies);
+}

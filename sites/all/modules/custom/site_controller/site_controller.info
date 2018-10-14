@@ -1,0 +1,4 @@
+name = 'Site Controller'
+core = '7.x'
+description = 'a controlar for website functionlaties'
+package = 'Custom'

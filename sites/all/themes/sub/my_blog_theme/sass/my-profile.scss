@@ -1,10 +1,9 @@
-.page-my-profile {
+.page-myprofile {
   .page-header {
     display :none;
   }
   .views-field-title {
-    padding-bottom: 30px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         text-align: center;
     }
     span {
@@ -12,46 +11,68 @@
       color: darkslateblue;
     }
   }
+  .views-field-field-email {
+    padding-bottom: 30px;
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+  }
   .views-field-field-photo {
     display: inline-block;
-    @media screen and (max-width: 767px) {
+    img {
+      width: 220px;
+      height: 220px;
+      margin: auto;
+      border: 1px solid black;
+      // border-radius: 50%;
+    }
+    @media screen and (max-width: 991px) {
         width: 100%;
     }
     .field-content {
-      @media screen and (max-width: 767px) {
-        width: 50%;
+      @media screen and (max-width: 1199px) {
+        width: 100%;
         margin: auto;
       }
-      @media screen and (max-width: 500px) {
-        width: 100%;
+      @media screen and (max-width: 991px) {
+        width: 60%;
+        margin: auto;
       }
     }
   }
   .views-field-field-whoami {
     display: inline-block;
-    width: 50%;
+    width: 75%;
     vertical-align: top;
-    padding: 30px;
+    padding: 15px 30px;
     text-align: justify;
-    @media screen and (max-width: 767px) {
-        width: 100%;
-    }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 991px) {
+      width: 100%;
       padding: 0px;
       padding-top: 20px;
-
     }
-    .field-content p {
-      font-family: cursive;
-      font-size: 1.5rem;
-      line-height: 1.5;
-      word-spacing: 5px;
+    @media screen and (min-width: 992px) and (max-width:1199px) {
+      padding: 0px 15px;
+    }
+    .field-content {
+      p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        word-spacing: 3px;
+      }
+      span.bold-names, .uppercase-words {
+        font-family: demifont;
+        color: #337ab7;
+      }
+      .uppercase-words {
+        text-transform: uppercase;
+      }
     }
   }
   table {
     border-collapse: collapse;
     width: 100%;
-    font-family: cursive;
+    font-family: normalfont;
     font-size: 1.5rem;
   }
   th, td {
@@ -70,7 +91,7 @@
       .technical-skills {
         padding-bottom: 15px;
         p {
-          font-weight: bold;
+          font-family: demifont;
         }
       }
       .content {
@@ -80,11 +101,11 @@
       }
       .sub, p, .sub-name {
         display: inline-block;
-        font-family: cursive;
         font-size: 1.5rem;
       }
       .sub {
         width: 15%;
+        font-weight: bold;
       }
       .sub-name {
         font-size: 1.5rem;
@@ -92,8 +113,8 @@
     }
   }
 
-  .views-label-field-my-projects, .views-label-field-certificates {
-    font-weight: bold;
+  .views-label-field-my-projects, .views-label-field-certificates, .academic-title {
+    font-family: demifont;
   }
 
   .views-field-field-certificates, .views-field-field-my-projects {
@@ -117,14 +138,58 @@
       clear: both;
       text-align: center;
       padding: 12px 0px;
-      @media screen and (max-width: 767px) {
-        width: 35%;
+      @media screen and (max-width: 991px) {
+        width: 30%;
       }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 767px) {
         width: 50%;
       }
       @media screen and (max-width: 500px) {
         width: 100%;
+      }
+    }
+  }
+
+  .views-field-field-technical-skills-new {
+    padding-top: 30px;
+    span {
+      font-family: demifont;
+      font-size: 1.5rem;
+    }
+    .field-collection-view {
+      display: inline-block;
+      padding-right: 80px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      @media screen and (max-width: 1199px) {
+        padding-right: 35px;
+      }
+      @media screen and (min-width: 690px) and (max-width: 734px) {
+        padding-right: 80px;
+        padding-left: 50px;
+      }
+      @media screen and (min-width: 550px) and (max-width: 689px) {
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+      @media screen and (min-width: 320px) and (max-width: 549px) {
+        margin-left: 20%;
+      }
+    }
+    .field-collection-view:last-child {
+      display: block;
+    }
+    .field-content {
+      padding-top: 10px;
+      .field-name-field-subject {
+        padding-bottom: 15px;
+      }
+      .field-name-field-tech-logo img {
+        width: 200px;
+        height: 120px;
+      }
+      .content .field-items .field-item {
+        font-family: normalfont;
       }
     }
   }

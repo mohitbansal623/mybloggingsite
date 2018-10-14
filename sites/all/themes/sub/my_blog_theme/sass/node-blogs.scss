@@ -1,5 +1,14 @@
-.node-type-create-blog {
+.node-type-create-blog, .page-myprofile {
+  .field {
+    padding-top: 15px;
+  }
+  .field-collection-view {
+    margin: 0;
+    padding: 0;
+  }
   .icons {
+    padding-top: 20px;
+    font-family: demifont;
     .fa {
       padding: 16px;
       font-size: 1.5rem;
@@ -28,5 +37,23 @@
     .fa-twitter:before {
       color: white;
     }
+    .fa-linkedin {
+      background: #007AB1;
+    }
+    .fa-linkedin:before {
+      color: white;
+    }
+    .views-field-nothing {
+      .icons {
+        padding-top: 20px;
+        font-family: demifont;
+      }
+    }
+  }
+}
+
+.page-myprofile {
+  .social-media-icons {
+    text-align: center;
   }
 }

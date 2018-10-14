@@ -1,57 +1,72 @@
 /* line 2, ../sass/education-section.scss */
-.page-tech-section .views-field.views-field-title span, .page-nontech-section .views-field.views-field-title span {
+.page-techsection .breadcrumb, .page-nontechsection .breadcrumb, .page-its-show-time .breadcrumb {
+  display: none;
+}
+/* line 5, ../sass/education-section.scss */
+.page-techsection .views-row:nth-child(3n+1), .page-nontechsection .views-row:nth-child(3n+1), .page-its-show-time .views-row:nth-child(3n+1) {
+  clear: both;
+}
+/* line 8, ../sass/education-section.scss */
+.page-techsection .views-field.views-field-title span, .page-nontechsection .views-field.views-field-title span, .page-its-show-time .views-field.views-field-title span {
   text-align: center;
-  font-weight: bold;
   font-size: 2rem;
   color: orange;
-  font-family: cursive;
 }
-/* line 9, ../sass/education-section.scss */
-.page-tech-section .media-youtube-video, .page-nontech-section .media-youtube-video {
+/* line 14, ../sass/education-section.scss */
+.page-techsection .media-youtube-video, .page-nontechsection .media-youtube-video, .page-its-show-time .media-youtube-video {
   position: relative;
   padding-top: 56.25%;
 }
-/* line 12, ../sass/education-section.scss */
-.page-tech-section .media-youtube-video .media-youtube-player, .page-nontech-section .media-youtube-video .media-youtube-player {
+/* line 17, ../sass/education-section.scss */
+.page-techsection .media-youtube-video .media-youtube-player, .page-nontechsection .media-youtube-video .media-youtube-player, .page-its-show-time .media-youtube-video .media-youtube-player {
   width: 100%;
   height: 100%;
   top: 0;
   position: absolute;
 }
-/* line 20, ../sass/education-section.scss */
-.page-tech-section .view-display-id-technical_links .view-content .views-row, .page-nontech-section .view-display-id-technical_links .view-content .views-row {
+/* line 25, ../sass/education-section.scss */
+.page-techsection .view-display-id-technical_links .view-content .views-row, .page-nontechsection .view-display-id-technical_links .view-content .views-row, .page-its-show-time .view-display-id-technical_links .view-content .views-row {
   padding-bottom: 60px;
 }
-/* line 22, ../sass/education-section.scss */
-.page-tech-section .view-display-id-technical_links .view-content .views-row .field-name-field-site-logo, .page-nontech-section .view-display-id-technical_links .view-content .views-row .field-name-field-site-logo {
+/* line 27, ../sass/education-section.scss */
+.page-techsection .view-display-id-technical_links .view-content .views-row .field-name-field-site-logo, .page-nontechsection .view-display-id-technical_links .view-content .views-row .field-name-field-site-logo, .page-its-show-time .view-display-id-technical_links .view-content .views-row .field-name-field-site-logo {
   padding-bottom: 10px;
   padding-top: 10px;
 }
-/* line 25, ../sass/education-section.scss */
-.page-tech-section .view-display-id-technical_links .view-content .views-row .field-name-field-site-logo .img-responsive, .page-nontech-section .view-display-id-technical_links .view-content .views-row .field-name-field-site-logo .img-responsive {
+/* line 30, ../sass/education-section.scss */
+.page-techsection .view-display-id-technical_links .view-content .views-row .field-name-field-site-logo .img-responsive, .page-nontechsection .view-display-id-technical_links .view-content .views-row .field-name-field-site-logo .img-responsive, .page-its-show-time .view-display-id-technical_links .view-content .views-row .field-name-field-site-logo .img-responsive {
   height: 50px;
 }
-/* line 32, ../sass/education-section.scss */
-.page-tech-section .view-display-id-technical_links .views-field-field-most-useful-sites .field-collection-view, .page-nontech-section .view-display-id-technical_links .views-field-field-most-useful-sites .field-collection-view {
+/* line 37, ../sass/education-section.scss */
+.page-techsection .view-display-id-technical_links .views-field-field-most-useful-sites .field-collection-view, .page-nontechsection .view-display-id-technical_links .views-field-field-most-useful-sites .field-collection-view, .page-its-show-time .view-display-id-technical_links .views-field-field-most-useful-sites .field-collection-view {
   display: inline-block;
   vertical-align: top;
   padding-left: 50px;
 }
-/* line 40, ../sass/education-section.scss */
-.page-tech-section .view-display-id-tech_videos, .page-tech-section .view-display-id-non_technical, .page-nontech-section .view-display-id-tech_videos, .page-nontech-section .view-display-id-non_technical {
+/* line 45, ../sass/education-section.scss */
+.page-techsection .view-display-id-tech_videos, .page-techsection .view-display-id-non_technical, .page-techsection .view-id-it_s_show_time, .page-nontechsection .view-display-id-tech_videos, .page-nontechsection .view-display-id-non_technical, .page-nontechsection .view-id-it_s_show_time, .page-its-show-time .view-display-id-tech_videos, .page-its-show-time .view-display-id-non_technical, .page-its-show-time .view-id-it_s_show_time {
   padding-top: 50px;
 }
-/* line 42, ../sass/education-section.scss */
-.page-tech-section .view-display-id-tech_videos .views-field-field-tech-video, .page-tech-section .view-display-id-non_technical .views-field-field-tech-video, .page-nontech-section .view-display-id-tech_videos .views-field-field-tech-video, .page-nontech-section .view-display-id-non_technical .views-field-field-tech-video {
+/* line 47, ../sass/education-section.scss */
+.page-techsection .view-display-id-tech_videos .views-field-field-tech-video, .page-techsection .view-display-id-non_technical .views-field-field-tech-video, .page-techsection .view-id-it_s_show_time .views-field-field-tech-video, .page-nontechsection .view-display-id-tech_videos .views-field-field-tech-video, .page-nontechsection .view-display-id-non_technical .views-field-field-tech-video, .page-nontechsection .view-id-it_s_show_time .views-field-field-tech-video, .page-its-show-time .view-display-id-tech_videos .views-field-field-tech-video, .page-its-show-time .view-display-id-non_technical .views-field-field-tech-video, .page-its-show-time .view-id-it_s_show_time .views-field-field-tech-video {
   padding-bottom: 10px;
   padding-top: 10px;
 }
-/* line 46, ../sass/education-section.scss */
-.page-tech-section .view-display-id-tech_videos .views-field-field-video-link, .page-tech-section .view-display-id-non_technical .views-field-field-video-link, .page-nontech-section .view-display-id-tech_videos .views-field-field-video-link, .page-nontech-section .view-display-id-non_technical .views-field-field-video-link {
+/* line 51, ../sass/education-section.scss */
+.page-techsection .view-display-id-tech_videos .views-field-field-video-link, .page-techsection .view-display-id-non_technical .views-field-field-video-link, .page-techsection .view-id-it_s_show_time .views-field-field-video-link, .page-nontechsection .view-display-id-tech_videos .views-field-field-video-link, .page-nontechsection .view-display-id-non_technical .views-field-field-video-link, .page-nontechsection .view-id-it_s_show_time .views-field-field-video-link, .page-its-show-time .view-display-id-tech_videos .views-field-field-video-link, .page-its-show-time .view-display-id-non_technical .views-field-field-video-link, .page-its-show-time .view-id-it_s_show_time .views-field-field-video-link {
   padding-bottom: 10px;
 }
-/* line 49, ../sass/education-section.scss */
-.page-tech-section .view-display-id-tech_videos .views-field.views-field-title span, .page-tech-section .view-display-id-non_technical .views-field.views-field-title span, .page-nontech-section .view-display-id-tech_videos .views-field.views-field-title span, .page-nontech-section .view-display-id-non_technical .views-field.views-field-title span {
+/* line 54, ../sass/education-section.scss */
+.page-techsection .view-display-id-tech_videos .views-field.views-field-title span, .page-techsection .view-display-id-non_technical .views-field.views-field-title span, .page-techsection .view-id-it_s_show_time .views-field.views-field-title span, .page-nontechsection .view-display-id-tech_videos .views-field.views-field-title span, .page-nontechsection .view-display-id-non_technical .views-field.views-field-title span, .page-nontechsection .view-id-it_s_show_time .views-field.views-field-title span, .page-its-show-time .view-display-id-tech_videos .views-field.views-field-title span, .page-its-show-time .view-display-id-non_technical .views-field.views-field-title span, .page-its-show-time .view-id-it_s_show_time .views-field.views-field-title span {
   text-align: center;
-  font-weight: bold;
+}
+/* line 60, ../sass/education-section.scss */
+.page-techsection .views-field-field-rating span, .page-nontechsection .views-field-field-rating span, .page-its-show-time .views-field-field-rating span {
+  font-family: demifont;
+  color: #337ab7;
+}
+
+/* line 68, ../sass/education-section.scss */
+.page-its-show-time .footer.container {
+  display: none;
 }

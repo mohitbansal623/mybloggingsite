@@ -2,3 +2,16 @@
 .page-user .main-container .row {
   display: none;
 }
+/* line 6, ../sass/user-dashboard.scss */
+.page-user #block-views-user-dashboard-block .block-title, .page-user #block-views-user-dashboard-block th, .page-user #block-views-user-dashboard-block a, .page-user #block-views-user-dashboard-block span {
+  font-family: normalfont;
+}
+/* line 9, ../sass/user-dashboard.scss */
+.page-user #block-views-user-dashboard-block td {
+  font-family: normalfont;
+  color: #337ab7;
+}
+/* line 13, ../sass/user-dashboard.scss */
+.page-user #block-views-user-dashboard-block p.user-name {
+  font-family: demifont;
+}

@@ -2,5 +2,17 @@
   .main-container .row {
     display: none;
   }
+  #block-views-user-dashboard-block {
+    .block-title, th, a, span {
+      font-family: normalfont;
+    }
+    td {
+      font-family: normalfont;
+      color: #337ab7;
+    }
+    p.user-name {
+      font-family: demifont;
+    }
+  }
 }
 
