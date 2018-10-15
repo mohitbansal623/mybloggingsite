@@ -1,0 +1,36 @@
+@import 'variables';
+
+.home-page-blogs {
+  .block-title {
+
+  }
+  .view-header {
+
+  }
+  .view-content {
+    padding-top: 30px;
+    font-size: 0;
+    text-align: center;
+    @extend %flex;
+    @extend %flex-wrap;
+    .views-row {
+      font-size: 1.4rem;
+      width: calc(50% - 30px);
+      margin: 0 15px 30px;
+      border: 2px dashed $yellow;
+      padding: 15px;
+      border-radius: 20px;
+      .views-field-title {
+        margin-bottom: 10px;
+        span {
+          font-size: 2.6rem;
+          font-family: $dancing-font;
+        }
+      }
+      .views-field-name, .views-field-created {
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+  }
+}

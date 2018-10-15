@@ -1,0 +1,45 @@
+/* line 7, ../sass/_variables.scss */
+.home-page-blogs .view-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* line 15, ../sass/_variables.scss */
+.home-page-blogs .view-content {
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+/* line 10, ../sass/home.scss */
+.home-page-blogs .view-content {
+  padding-top: 30px;
+  font-size: 0;
+  text-align: center;
+}
+/* line 16, ../sass/home.scss */
+.home-page-blogs .view-content .views-row {
+  font-size: 1.4rem;
+  width: calc(50% - 30px);
+  margin: 0 15px 30px;
+  border: 2px dashed #fcc930;
+  padding: 15px;
+  border-radius: 20px;
+}
+/* line 23, ../sass/home.scss */
+.home-page-blogs .view-content .views-row .views-field-title {
+  margin-bottom: 10px;
+}
+/* line 25, ../sass/home.scss */
+.home-page-blogs .view-content .views-row .views-field-title span {
+  font-size: 2.6rem;
+  font-family: "Dancing Script", cursive;
+}
+/* line 30, ../sass/home.scss */
+.home-page-blogs .view-content .views-row .views-field-name, .home-page-blogs .view-content .views-row .views-field-created {
+  display: inline-block;
+  vertical-align: top;
+}
