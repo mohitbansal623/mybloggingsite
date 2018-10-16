@@ -1,0 +1,71 @@
+@import 'variables';
+
+#navbar {
+  background: transparent;
+  border: 0;
+  margin: 0 auto;
+  padding-top: 20px;
+  .navbar-header {
+    .logo {
+      display: none;
+    }
+    .navbar-brand {
+      color: #000;
+      font-family: $lobster-font;
+    }
+  }
+  #navbar-collapse {
+    text-align: right;
+    border: 0;
+    .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+      background-color: transparent;
+      color: #333;
+    }
+    @media screen and (max-width: 767px) {
+      background: $dark-grey;
+      color: #fff;
+      .navbar-nav {
+        display: block;
+        color: #fff;
+        a, li {
+          color: #fff;
+        }
+        a {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+      text-align: right;
+      .dropdown-menu {
+        text-align: right;
+        background-color: #393a3e;
+      }
+      .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+        background-color: transparent;
+        color: #fff;
+      }
+    }
+  }
+  .navbar-nav {
+    float: none;
+    display: inline-block;
+    a {
+      color: #777;
+      font-size: 1.2rem;
+      background-color: transparent;
+    }
+    li {
+      a {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.block-webform.contact-form {
+  max-width: 400px;
+  padding: 20px;
+  position: relative;
+  color: #fff;
+  background: $dark-grey;
+}

@@ -1,8 +1,11 @@
 $blue: #04638a;
 $yellow: #fcc930;
+$dark-grey: #45474b;
+$light-grey: #eae9ef;
 
 $dancing-font: 'Dancing Script', cursive;
 $lobster-font: 'Lobster', cursive;
+$montserrat-font: 'Montserrat', sans-serif;
 
 %flex {
   display: -webkit-box;
@@ -16,4 +19,14 @@ $lobster-font: 'Lobster', cursive;
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
+}
+
+img {
+  max-width: 100%;
+}
+
+body.html {
+  font-family: $montserrat-font;
+  font-weight: 400;
+  font-size: 1rem;
 }

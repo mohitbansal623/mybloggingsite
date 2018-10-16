@@ -1,36 +1,182 @@
 @import 'variables';
 
+body.front {
+  background: $light-grey;
+  &:before {
+    content: "";
+    background: #fff;
+    height: 100%;
+    position: absolute;
+    width: 60%;
+    right: 0;
+    top: 0;
+  }
+  #block-system-main {
+    display: none;
+  }
+
+  .main-container.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 25px;
+  }
+}
+
 .home-page-blogs {
+  background: #fff;
+
+  // margin: 0 -90px;
   .block-title {
-
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    position: relative;
+    @media screen and (max-width: 480px) {
+      font-size: 2.4rem;
+      padding: 0 10px 0;
+      width: 100%;
+    }
+    &:after {
+      content: "";
+      height: 3px;
+      width: 50px;
+      background: $blue;
+      display: block;
+      margin-top: 7px;
+    }
   }
+
   .view-header {
-
+    margin-bottom: 20px;
   }
-  .view-content {
-    padding-top: 30px;
-    font-size: 0;
-    text-align: center;
+
+  .view-blogs {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    @media screen and (max-width: 480px) {
+      padding: 0 10px 50px;
+      width: 100%;
+    }
+  }
+  .view-content{
     @extend %flex;
     @extend %flex-wrap;
     .views-row {
-      font-size: 1.4rem;
-      width: calc(50% - 30px);
-      margin: 0 15px 30px;
-      border: 2px dashed $yellow;
-      padding: 15px;
-      border-radius: 20px;
+      font-size: 1.3rem;
+      width: calc(33.33% - 0.5px - 10px);
+      margin: 0 5px 10px;
+      background-color: #fff;
+      box-shadow: 0 2px 21px 0 rgba(0, 0, 0, 0.06);
+      border: 1px solid #eee;
+      padding: 20px;
+      @media screen and (max-width: 767px) {
+        width: calc(50% - 0.5px - 10px);
+      }
+      @media screen and (max-width: 480px) {
+        width: 100%;
+        margin: 0 0px 10px;
+      }
       .views-field-title {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
         span {
-          font-size: 2.6rem;
-          font-family: $dancing-font;
+          font-size: 1.8rem;
+          font-weight: 500;
         }
       }
-      .views-field-name, .views-field-created {
+      .views-field-created, .views-field-name {
         display: inline-block;
         vertical-align: top;
+        margin-bottom: 12px;
+        &.views-field-name {
+          padding-right: 10px;
+        }
+        span {
+          font-size: 1.2rem;
+          color: #777;
+          font-style: italic;
+          a {
+            color: #777;
+          }
+        }
       }
+      .views-field-body {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.home-page-sec-1 {
+  padding-bottom: 170px;
+  @media screen and(max-width: 767px) {
+    padding-bottom: 70px;
+  }
+  .overview {
+    max-width: 85%;
+    margin: auto;
+    padding-top: 100px;
+    font-size: 0px;
+    @media screen and(max-width: 767px) {
+      padding-top: 50px;
+    }
+    @media screen and (max-width: 480px) {
+      max-width: 100%;
+    }
+  }
+  .overview-image, .overview-text {
+    @media screen and(min-width: 768px) {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+    }
+    &.overview-image {
+      @media screen and(max-width: 767px) {
+        max-width: 400px;
+        margin-bottom: 20px;
+      }
+      @media screen and (max-width: 480px) {
+        max-width: 100%;
+      }
+    }
+    img {
+      border: 6px solid #fff;
+      box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    }
+    &.overview-text {
+      @media screen and(min-width: 768px) {
+        padding-left: 25px;
+      }
+    }
+    h2 {
+      margin: 0;
+      font-weight: 700;
+      position: relative;
+      font-size: 3rem;
+      @media screen and (max-width: 480px) {
+        font-size: 2.4rem;
+      }
+      &:after {
+        content: "";
+        height: 3px;
+        width: 50px;
+        background: $blue;
+        display: block;
+        margin-top: 7px;
+      }
+      span {
+        display: block;
+        text-transform: uppercase;
+      }
+    }
+    p {
+      font-size: 1.5rem;
+      margin-top: 15px;
     }
   }
 }
