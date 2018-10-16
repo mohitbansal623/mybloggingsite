@@ -1,4 +1,4 @@
-/* line 7, ../sass/_variables.scss */
+/* line 10, ../sass/_variables.scss */
 .home-page-blogs .view-content {
   display: -webkit-box;
   display: -moz-box;
@@ -7,39 +7,247 @@
   display: flex;
 }
 
-/* line 15, ../sass/_variables.scss */
+/* line 18, ../sass/_variables.scss */
 .home-page-blogs .view-content {
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
 }
 
-/* line 10, ../sass/home.scss */
-.home-page-blogs .view-content {
-  padding-top: 30px;
-  font-size: 0;
-  text-align: center;
+/* line 24, ../sass/_variables.scss */
+img {
+  max-width: 100%;
 }
-/* line 16, ../sass/home.scss */
-.home-page-blogs .view-content .views-row {
-  font-size: 1.4rem;
-  width: calc(50% - 30px);
-  margin: 0 15px 30px;
-  border: 2px dashed #fcc930;
-  padding: 15px;
-  border-radius: 20px;
+
+/* line 28, ../sass/_variables.scss */
+body.html {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
 }
-/* line 23, ../sass/home.scss */
-.home-page-blogs .view-content .views-row .views-field-title {
-  margin-bottom: 10px;
+
+/* line 3, ../sass/home.scss */
+body.front {
+  background: #eae9ef;
 }
+/* line 5, ../sass/home.scss */
+body.front:before {
+  content: "";
+  background: #fff;
+  height: 100%;
+  position: absolute;
+  width: 60%;
+  right: 0;
+  top: 0;
+}
+/* line 14, ../sass/home.scss */
+body.front #block-system-main {
+  display: none;
+}
+/* line 18, ../sass/home.scss */
+body.front .main-container.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 25px;
+}
+
 /* line 25, ../sass/home.scss */
-.home-page-blogs .view-content .views-row .views-field-title span {
-  font-size: 2.6rem;
-  font-family: "Dancing Script", cursive;
+.home-page-blogs {
+  background: #fff;
 }
-/* line 30, ../sass/home.scss */
-.home-page-blogs .view-content .views-row .views-field-name, .home-page-blogs .view-content .views-row .views-field-created {
+/* line 29, ../sass/home.scss */
+.home-page-blogs .block-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  position: relative;
+}
+@media screen and (max-width: 480px) {
+  /* line 29, ../sass/home.scss */
+  .home-page-blogs .block-title {
+    font-size: 2.4rem;
+    padding: 0 10px 0;
+    width: 100%;
+  }
+}
+/* line 43, ../sass/home.scss */
+.home-page-blogs .block-title:after {
+  content: "";
+  height: 3px;
+  width: 50px;
+  background: #04638a;
+  display: block;
+  margin-top: 7px;
+}
+/* line 53, ../sass/home.scss */
+.home-page-blogs .view-header {
+  margin-bottom: 20px;
+}
+/* line 57, ../sass/home.scss */
+.home-page-blogs .view-blogs {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 480px) {
+  /* line 57, ../sass/home.scss */
+  .home-page-blogs .view-blogs {
+    padding: 0 10px 50px;
+    width: 100%;
+  }
+}
+/* line 70, ../sass/home.scss */
+.home-page-blogs .view-content .views-row {
+  font-size: 1.3rem;
+  width: calc(33.33% - 0.5px - 10px);
+  margin: 0 5px 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 21px 0 rgba(0, 0, 0, 0.06);
+  border: 1px solid #eee;
+  padding: 20px;
+}
+@media screen and (max-width: 767px) {
+  /* line 70, ../sass/home.scss */
+  .home-page-blogs .view-content .views-row {
+    width: calc(50% - 0.5px - 10px);
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 70, ../sass/home.scss */
+  .home-page-blogs .view-content .views-row {
+    width: 100%;
+    margin: 0 0px 10px;
+  }
+}
+/* line 85, ../sass/home.scss */
+.home-page-blogs .view-content .views-row .views-field-title {
+  margin-bottom: 12px;
+}
+/* line 87, ../sass/home.scss */
+.home-page-blogs .view-content .views-row .views-field-title span {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+/* line 92, ../sass/home.scss */
+.home-page-blogs .view-content .views-row .views-field-created, .home-page-blogs .view-content .views-row .views-field-name {
   display: inline-block;
   vertical-align: top;
+  margin-bottom: 12px;
+}
+/* line 96, ../sass/home.scss */
+.home-page-blogs .view-content .views-row .views-field-created.views-field-name, .home-page-blogs .view-content .views-row .views-field-name.views-field-name {
+  padding-right: 10px;
+}
+/* line 99, ../sass/home.scss */
+.home-page-blogs .view-content .views-row .views-field-created span, .home-page-blogs .view-content .views-row .views-field-name span {
+  font-size: 1.2rem;
+  color: #777;
+  font-style: italic;
+}
+/* line 103, ../sass/home.scss */
+.home-page-blogs .view-content .views-row .views-field-created span a, .home-page-blogs .view-content .views-row .views-field-name span a {
+  color: #777;
+}
+/* line 108, ../sass/home.scss */
+.home-page-blogs .view-content .views-row .views-field-body {
+  margin-bottom: 10px;
+}
+
+/* line 115, ../sass/home.scss */
+.home-page-sec-1 {
+  padding-bottom: 170px;
+}
+@media screen and (max-width: 767px) {
+  /* line 115, ../sass/home.scss */
+  .home-page-sec-1 {
+    padding-bottom: 70px;
+  }
+}
+/* line 120, ../sass/home.scss */
+.home-page-sec-1 .overview {
+  max-width: 85%;
+  margin: auto;
+  padding-top: 100px;
+  font-size: 0px;
+}
+@media screen and (max-width: 767px) {
+  /* line 120, ../sass/home.scss */
+  .home-page-sec-1 .overview {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 120, ../sass/home.scss */
+  .home-page-sec-1 .overview {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 132, ../sass/home.scss */
+  .home-page-sec-1 .overview-image, .home-page-sec-1 .overview-text {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 138, ../sass/home.scss */
+  .home-page-sec-1 .overview-image.overview-image, .home-page-sec-1 .overview-text.overview-image {
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 138, ../sass/home.scss */
+  .home-page-sec-1 .overview-image.overview-image, .home-page-sec-1 .overview-text.overview-image {
+    max-width: 100%;
+  }
+}
+/* line 147, ../sass/home.scss */
+.home-page-sec-1 .overview-image img, .home-page-sec-1 .overview-text img {
+  border: 6px solid #fff;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and (min-width: 768px) {
+  /* line 151, ../sass/home.scss */
+  .home-page-sec-1 .overview-image.overview-text, .home-page-sec-1 .overview-text.overview-text {
+    padding-left: 25px;
+  }
+}
+/* line 156, ../sass/home.scss */
+.home-page-sec-1 .overview-image h2, .home-page-sec-1 .overview-text h2 {
+  margin: 0;
+  font-weight: 700;
+  position: relative;
+  font-size: 3rem;
+}
+@media screen and (max-width: 480px) {
+  /* line 156, ../sass/home.scss */
+  .home-page-sec-1 .overview-image h2, .home-page-sec-1 .overview-text h2 {
+    font-size: 2.4rem;
+  }
+}
+/* line 164, ../sass/home.scss */
+.home-page-sec-1 .overview-image h2:after, .home-page-sec-1 .overview-text h2:after {
+  content: "";
+  height: 3px;
+  width: 50px;
+  background: #04638a;
+  display: block;
+  margin-top: 7px;
+}
+/* line 172, ../sass/home.scss */
+.home-page-sec-1 .overview-image h2 span, .home-page-sec-1 .overview-text h2 span {
+  display: block;
+  text-transform: uppercase;
+}
+/* line 177, ../sass/home.scss */
+.home-page-sec-1 .overview-image p, .home-page-sec-1 .overview-text p {
+  font-size: 1.5rem;
+  margin-top: 15px;
 }

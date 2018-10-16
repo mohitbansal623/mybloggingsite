@@ -10,6 +10,8 @@
  function blog_revamp_preprocess_page(&$variables) {
    drupal_add_css('https://fonts.googleapis.com/css?family=Lobster', 'external');
    drupal_add_css('https://fonts.googleapis.com/css?family=Dancing+Script:400,700', 'external');
+   drupal_add_css('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800', 'external');
+   
    if (drupal_is_front_page()) {
      drupal_add_css(drupal_get_path('theme', 'blog_revamp') . '/css/home.css');
      drupal_add_js(drupal_get_path('theme', 'blog_revamp') . '/js/home.js');
