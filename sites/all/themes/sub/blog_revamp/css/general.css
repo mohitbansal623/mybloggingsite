@@ -1,9 +1,9 @@
-/* line 24, ../sass/_variables.scss */
+/* line 26, ../sass/_variables.scss */
 img {
   max-width: 100%;
 }
 
-/* line 28, ../sass/_variables.scss */
+/* line 30, ../sass/_variables.scss */
 body.html {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -85,10 +85,6 @@ body.html {
 }
 
 /* line 65, ../sass/general.scss */
-.block-webform.contact-form {
-  max-width: 400px;
-  padding: 20px;
-  position: relative;
-  color: #fff;
-  background: #45474b;
+body .footer {
+  border: 0;
 }
