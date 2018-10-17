@@ -1,7 +1,7 @@
 @import 'variables';
 
 body.front {
-  background: $light-grey;
+  background-image: url(../images/Background.png);
   &:before {
     content: "";
     background: #fff;
@@ -52,6 +52,8 @@ body.front {
 
   .view-header {
     margin-bottom: 20px;
+    font-size: 1.4rem;
+    color: #777;
   }
 
   .view-blogs {
@@ -177,6 +179,84 @@ body.front {
     p {
       font-size: 1.5rem;
       margin-top: 15px;
+    }
+  }
+}
+
+.home_page_quote_block {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 355px);
+  .quote {
+    width: 80%;
+    color: $pink;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: italic;
+    background: aliceblue;
+    .quote-inner {
+      background: url(../images/top.png) 15px 10px no-repeat,url(../images/btm.png) right bottom no-repeat;
+      padding: 50px;
+    }
+    .quote-text {
+      width: 80%;
+      color: #ff1493;
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+    .quote-author {
+
+    }
+  }
+}
+
+.home_page_quote_block {
+}
+
+.block-webform.contact-form {
+  max-width: 350px;
+  padding: 25px;
+  position: relative;
+  color: #fff;
+  background: $dark-grey;
+  margin-left: auto;
+  border-radius: 45px 45px 0 0;
+  border-radius: 45px;
+  display: inline-block;
+  vertical-align: top;
+  .block-title {
+    text-transform: uppercase;
+    font-weight: 800;
+    position: relative;
+    margin-bottom: 25px;
+    @media screen and (max-width: 480px) {
+      font-size: 2.4rem;
+    }
+    &:after {
+      content: "";
+      height: 3px;
+      width: 50px;
+      background: #fff;
+      display: block;
+      margin-top: 7px;
+    }
+  }
+  form {
+    label {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    .form-actions {
+      text-align: center;
+      button {
+        background: #eae9ef;
+        border: 0;
+        border-radius: 0;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 5px 30px;
+      }
     }
   }
 }
