@@ -32,3 +32,25 @@ body.html {
   font-weight: 400;
   font-size: 1rem;
 }
+
+@mixin read-more($color) {
+  margin-top: 20px;
+  text-align: center;
+  a {
+    border: 1px solid $color;
+    color: $color;
+    background: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.5s all;
+    &:hover {
+      color: #fff;
+      background: $color;
+    }
+  }
+}

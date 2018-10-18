@@ -90,7 +90,7 @@ body.front .main-container.container {
   color: #777;
 }
 /* line 59, ../sass/home.scss */
-.home-page-blogs .view-blogs {
+.home-page-blogs .view {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -98,7 +98,7 @@ body.front .main-container.container {
 }
 @media screen and (max-width: 480px) {
   /* line 59, ../sass/home.scss */
-  .home-page-blogs .view-blogs {
+  .home-page-blogs .view {
     padding: 0 10px 50px;
     width: 100%;
   }
@@ -159,18 +159,42 @@ body.front .main-container.container {
 .home-page-blogs .view-content .views-row .views-field-body {
   margin-bottom: 10px;
 }
+/* line 115, ../sass/home.scss */
+.home-page-blogs .explore-more {
+  margin-top: 20px;
+  text-align: center;
+}
+/* line 39, ../sass/_variables.scss */
+.home-page-blogs .explore-more a {
+  border: 1px solid #04638a;
+  color: #04638a;
+  background: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 0.5s all;
+}
+/* line 51, ../sass/_variables.scss */
+.home-page-blogs .explore-more a:hover {
+  color: #fff;
+  background: #04638a;
+}
 
-/* line 117, ../sass/home.scss */
+/* line 120, ../sass/home.scss */
 .home-page-sec-1 {
   padding-bottom: 170px;
 }
 @media screen and (max-width: 767px) {
-  /* line 117, ../sass/home.scss */
+  /* line 120, ../sass/home.scss */
   .home-page-sec-1 {
     padding-bottom: 70px;
   }
 }
-/* line 122, ../sass/home.scss */
+/* line 125, ../sass/home.scss */
 .home-page-sec-1 .overview {
   max-width: 85%;
   margin: auto;
@@ -178,19 +202,19 @@ body.front .main-container.container {
   font-size: 0px;
 }
 @media screen and (max-width: 767px) {
-  /* line 122, ../sass/home.scss */
+  /* line 125, ../sass/home.scss */
   .home-page-sec-1 .overview {
     padding-top: 50px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 122, ../sass/home.scss */
+  /* line 125, ../sass/home.scss */
   .home-page-sec-1 .overview {
     max-width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 134, ../sass/home.scss */
+  /* line 137, ../sass/home.scss */
   .home-page-sec-1 .overview-image, .home-page-sec-1 .overview-text {
     display: inline-block;
     width: 50%;
@@ -198,30 +222,30 @@ body.front .main-container.container {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 140, ../sass/home.scss */
+  /* line 143, ../sass/home.scss */
   .home-page-sec-1 .overview-image.overview-image, .home-page-sec-1 .overview-text.overview-image {
     max-width: 400px;
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 140, ../sass/home.scss */
+  /* line 143, ../sass/home.scss */
   .home-page-sec-1 .overview-image.overview-image, .home-page-sec-1 .overview-text.overview-image {
     max-width: 100%;
   }
 }
-/* line 149, ../sass/home.scss */
+/* line 152, ../sass/home.scss */
 .home-page-sec-1 .overview-image img, .home-page-sec-1 .overview-text img {
   border: 6px solid #fff;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media screen and (min-width: 768px) {
-  /* line 153, ../sass/home.scss */
+  /* line 156, ../sass/home.scss */
   .home-page-sec-1 .overview-image.overview-text, .home-page-sec-1 .overview-text.overview-text {
     padding-left: 25px;
   }
 }
-/* line 158, ../sass/home.scss */
+/* line 161, ../sass/home.scss */
 .home-page-sec-1 .overview-image h2, .home-page-sec-1 .overview-text h2 {
   margin: 0;
   font-weight: 700;
@@ -229,12 +253,12 @@ body.front .main-container.container {
   font-size: 3rem;
 }
 @media screen and (max-width: 480px) {
-  /* line 158, ../sass/home.scss */
+  /* line 161, ../sass/home.scss */
   .home-page-sec-1 .overview-image h2, .home-page-sec-1 .overview-text h2 {
     font-size: 2.4rem;
   }
 }
-/* line 166, ../sass/home.scss */
+/* line 169, ../sass/home.scss */
 .home-page-sec-1 .overview-image h2:after, .home-page-sec-1 .overview-text h2:after {
   content: "";
   height: 3px;
@@ -243,59 +267,118 @@ body.front .main-container.container {
   display: block;
   margin-top: 7px;
 }
-/* line 174, ../sass/home.scss */
+/* line 177, ../sass/home.scss */
 .home-page-sec-1 .overview-image h2 span, .home-page-sec-1 .overview-text h2 span {
   display: block;
   text-transform: uppercase;
 }
-/* line 179, ../sass/home.scss */
+/* line 182, ../sass/home.scss */
 .home-page-sec-1 .overview-image p, .home-page-sec-1 .overview-text p {
   font-size: 1.5rem;
   margin-top: 15px;
 }
 
-/* line 186, ../sass/home.scss */
+/* line 189, ../sass/home.scss */
 .home_page_quote_block {
-  display: inline-block;
-  vertical-align: top;
-  width: calc(100% - 355px);
+  text-align: left;
 }
-/* line 190, ../sass/home.scss */
+@media screen and (min-width: 768px) {
+  /* line 189, ../sass/home.scss */
+  .home_page_quote_block {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 355px);
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 189, ../sass/home.scss */
+  .home_page_quote_block {
+    margin-bottom: 20px;
+  }
+}
+/* line 199, ../sass/home.scss */
 .home_page_quote_block .quote {
-  width: 80%;
-  color: #ff1493;
+  width: 85%;
+  color: #0086dd;
   font-size: 1.5rem;
   font-weight: 500;
-  font-style: italic;
   background: aliceblue;
 }
-/* line 197, ../sass/home.scss */
+/* line 205, ../sass/home.scss */
 .home_page_quote_block .quote .quote-inner {
   background: url(../images/top.png) 15px 10px no-repeat, url(../images/btm.png) right bottom no-repeat;
-  padding: 50px;
+  padding: 50px 70px 60px 75px;
 }
-/* line 201, ../sass/home.scss */
+@media screen and (max-width: 480px) {
+  /* line 205, ../sass/home.scss */
+  .home_page_quote_block .quote .quote-inner {
+    background-size: 40px;
+    padding: 45px 20px 45px 45px;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 199, ../sass/home.scss */
+  .home_page_quote_block .quote {
+    width: calc(100% - 20px);
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 199, ../sass/home.scss */
+  .home_page_quote_block .quote {
+    width: 100%;
+  }
+}
+/* line 219, ../sass/home.scss */
 .home_page_quote_block .quote .quote-text {
   width: 80%;
-  color: #ff1493;
   font-size: 1.4rem;
   font-weight: 500;
 }
+@media screen and (max-width: 1199px) {
+  /* line 219, ../sass/home.scss */
+  .home_page_quote_block .quote .quote-text {
+    width: 100%;
+  }
+}
+/* line 227, ../sass/home.scss */
+.home_page_quote_block .quote .quote-author {
+  font-style: italic;
+  margin-top: 20px;
+}
 
-/* line 216, ../sass/home.scss */
+@media screen and (max-width: 991px) {
+  /* line 237, ../sass/home.scss */
+  body.front .footer {
+    width: calc(100% - 25px);
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 237, ../sass/home.scss */
+  body.front .footer {
+    text-align: center;
+  }
+}
+
+/* line 246, ../sass/home.scss */
 .block-webform.contact-form {
+  display: inline-block;
   max-width: 350px;
   padding: 25px;
   position: relative;
   color: #fff;
   background: #45474b;
-  margin-left: auto;
   border-radius: 45px 45px 0 0;
   border-radius: 45px;
-  display: inline-block;
   vertical-align: top;
+  text-align: left;
 }
-/* line 227, ../sass/home.scss */
+@media screen and (min-width: 768px) {
+  /* line 246, ../sass/home.scss */
+  .block-webform.contact-form {
+    margin-left: auto;
+  }
+}
+/* line 260, ../sass/home.scss */
 .block-webform.contact-form .block-title {
   text-transform: uppercase;
   font-weight: 800;
@@ -303,12 +386,12 @@ body.front .main-container.container {
   margin-bottom: 25px;
 }
 @media screen and (max-width: 480px) {
-  /* line 227, ../sass/home.scss */
+  /* line 260, ../sass/home.scss */
   .block-webform.contact-form .block-title {
     font-size: 2.4rem;
   }
 }
-/* line 235, ../sass/home.scss */
+/* line 268, ../sass/home.scss */
 .block-webform.contact-form .block-title:after {
   content: "";
   height: 3px;
@@ -317,16 +400,16 @@ body.front .main-container.container {
   display: block;
   margin-top: 7px;
 }
-/* line 245, ../sass/home.scss */
+/* line 278, ../sass/home.scss */
 .block-webform.contact-form form label {
   font-size: 1.2rem;
   font-weight: 500;
 }
-/* line 249, ../sass/home.scss */
+/* line 282, ../sass/home.scss */
 .block-webform.contact-form form .form-actions {
   text-align: center;
 }
-/* line 251, ../sass/home.scss */
+/* line 284, ../sass/home.scss */
 .block-webform.contact-form form .form-actions button {
   background: #eae9ef;
   border: 0;

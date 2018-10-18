@@ -56,7 +56,7 @@ body.front {
     color: #777;
   }
 
-  .view-blogs {
+  .view {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
@@ -111,6 +111,9 @@ body.front {
         margin-bottom: 10px;
       }
     }
+  }
+  .explore-more {
+    @include read-more($blue);
   }
 }
 
@@ -184,28 +187,46 @@ body.front {
 }
 
 .home_page_quote_block {
-  display: inline-block;
-  vertical-align: top;
-  width: calc(100% - 355px);
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 355px);
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+  text-align: left;
   .quote {
-    width: 80%;
-    color: $pink;
+    width: 85%;
+    color: #0086dd;
     font-size: 1.5rem;
     font-weight: 500;
-    font-style: italic;
     background: aliceblue;
     .quote-inner {
       background: url(../images/top.png) 15px 10px no-repeat,url(../images/btm.png) right bottom no-repeat;
-      padding: 50px;
+      padding: 50px 70px 60px 75px;
+      @media screen and (max-width: 480px) {
+        background-size: 40px;
+        padding: 45px 20px 45px 45px;
+      }
+    }
+    @media screen and (max-width: 991px) {
+      width: calc(100% - 20px);
+    }
+    @media screen and (max-width: 767px) {
+      width: 100%;
     }
     .quote-text {
       width: 80%;
-      color: #ff1493;
       font-size: 1.4rem;
       font-weight: 500;
+      @media screen and (max-width: 1199px) {
+        width: 100%;
+      }
     }
     .quote-author {
-
+      font-style: italic;
+      margin-top: 20px;
     }
   }
 }
@@ -213,17 +234,29 @@ body.front {
 .home_page_quote_block {
 }
 
+body.front .footer {
+  @media screen and (max-width: 991px) {
+    width: calc(100% - 25px);
+  }
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
 .block-webform.contact-form {
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+  display: inline-block;
   max-width: 350px;
   padding: 25px;
   position: relative;
   color: #fff;
   background: $dark-grey;
-  margin-left: auto;
   border-radius: 45px 45px 0 0;
   border-radius: 45px;
-  display: inline-block;
   vertical-align: top;
+  text-align: left;
   .block-title {
     text-transform: uppercase;
     font-weight: 800;
