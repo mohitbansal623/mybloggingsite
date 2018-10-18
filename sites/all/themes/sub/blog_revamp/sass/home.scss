@@ -77,6 +77,14 @@ body.front {
       box-shadow: 0 2px 21px 0 rgba(0, 0, 0, 0.06);
       border: 1px solid #eee;
       padding: 20px;
+      transition: 0.5s all;
+      &:hover {
+        box-shadow: 0 2px 21px 0 rgba(0, 0, 0, 0.1);
+        border: 1px solid $light-blue;
+        .views-field-title span {
+          color: $light-blue;
+        }
+      }
       @media screen and (max-width: 767px) {
         width: calc(50% - 0.5px - 10px);
       }
@@ -87,6 +95,7 @@ body.front {
       .views-field-title {
         margin-bottom: 12px;
         span {
+          transition: 0.5s all;
           font-size: 1.8rem;
           font-weight: 500;
         }
