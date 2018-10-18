@@ -280,6 +280,7 @@ body.front .main-container.container {
 
 /* line 189, ../sass/home.scss */
 .home_page_quote_block {
+  position: relative;
   text-align: left;
 }
 @media screen and (min-width: 768px) {
@@ -296,7 +297,7 @@ body.front .main-container.container {
     margin-bottom: 20px;
   }
 }
-/* line 199, ../sass/home.scss */
+/* line 200, ../sass/home.scss */
 .home_page_quote_block .quote {
   width: 85%;
   color: #0086dd;
@@ -304,62 +305,62 @@ body.front .main-container.container {
   font-weight: 500;
   background: aliceblue;
 }
-/* line 205, ../sass/home.scss */
+/* line 206, ../sass/home.scss */
 .home_page_quote_block .quote .quote-inner {
   background: url(../images/top.png) 15px 10px no-repeat, url(../images/btm.png) right bottom no-repeat;
   padding: 50px 70px 60px 75px;
 }
 @media screen and (max-width: 480px) {
-  /* line 205, ../sass/home.scss */
+  /* line 206, ../sass/home.scss */
   .home_page_quote_block .quote .quote-inner {
     background-size: 40px;
     padding: 45px 20px 45px 45px;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 199, ../sass/home.scss */
+  /* line 200, ../sass/home.scss */
   .home_page_quote_block .quote {
     width: calc(100% - 20px);
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 199, ../sass/home.scss */
+  /* line 200, ../sass/home.scss */
   .home_page_quote_block .quote {
     width: 100%;
   }
 }
-/* line 219, ../sass/home.scss */
+/* line 220, ../sass/home.scss */
 .home_page_quote_block .quote .quote-text {
   width: 80%;
   font-size: 1.4rem;
   font-weight: 500;
 }
 @media screen and (max-width: 1199px) {
-  /* line 219, ../sass/home.scss */
+  /* line 220, ../sass/home.scss */
   .home_page_quote_block .quote .quote-text {
     width: 100%;
   }
 }
-/* line 227, ../sass/home.scss */
+/* line 228, ../sass/home.scss */
 .home_page_quote_block .quote .quote-author {
   font-style: italic;
   margin-top: 20px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 237, ../sass/home.scss */
+  /* line 238, ../sass/home.scss */
   body.front .footer {
     width: calc(100% - 25px);
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 237, ../sass/home.scss */
+  /* line 238, ../sass/home.scss */
   body.front .footer {
     text-align: center;
   }
 }
 
-/* line 246, ../sass/home.scss */
+/* line 247, ../sass/home.scss */
 .block-webform.contact-form {
   display: inline-block;
   max-width: 350px;
@@ -373,12 +374,12 @@ body.front .main-container.container {
   text-align: left;
 }
 @media screen and (min-width: 768px) {
-  /* line 246, ../sass/home.scss */
+  /* line 247, ../sass/home.scss */
   .block-webform.contact-form {
     margin-left: auto;
   }
 }
-/* line 260, ../sass/home.scss */
+/* line 261, ../sass/home.scss */
 .block-webform.contact-form .block-title {
   text-transform: uppercase;
   font-weight: 800;
@@ -386,12 +387,12 @@ body.front .main-container.container {
   margin-bottom: 25px;
 }
 @media screen and (max-width: 480px) {
-  /* line 260, ../sass/home.scss */
+  /* line 261, ../sass/home.scss */
   .block-webform.contact-form .block-title {
     font-size: 2.4rem;
   }
 }
-/* line 268, ../sass/home.scss */
+/* line 269, ../sass/home.scss */
 .block-webform.contact-form .block-title:after {
   content: "";
   height: 3px;
@@ -400,16 +401,16 @@ body.front .main-container.container {
   display: block;
   margin-top: 7px;
 }
-/* line 278, ../sass/home.scss */
+/* line 279, ../sass/home.scss */
 .block-webform.contact-form form label {
   font-size: 1.2rem;
   font-weight: 500;
 }
-/* line 282, ../sass/home.scss */
+/* line 283, ../sass/home.scss */
 .block-webform.contact-form form .form-actions {
   text-align: center;
 }
-/* line 284, ../sass/home.scss */
+/* line 285, ../sass/home.scss */
 .block-webform.contact-form form .form-actions button {
   background: #eae9ef;
   border: 0;
