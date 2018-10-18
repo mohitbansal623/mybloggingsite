@@ -187,6 +187,7 @@ body.front {
 }
 
 .home_page_quote_block {
+  position: relative;
   @media screen and (min-width: 768px) {
     display: inline-block;
     vertical-align: top;
